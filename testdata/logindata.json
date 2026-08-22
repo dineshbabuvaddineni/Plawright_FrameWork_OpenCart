@@ -1,9 +1,9 @@
 [
   {
     "testName":"Valid Login",
-    "email": "Dinesh9182@abc.com",
-    "password": "Password1",
-    "expected": "Success"
+    "email": "dinesh1234@abc.com",
+    "password": "Dinesh1234",
+    "expected": "success"
   },
   {
     "testName":"InValid Login",
