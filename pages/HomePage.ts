@@ -40,6 +40,15 @@ export class HomePage{
         }
     }
 
+    async clickRegister(){
+        try{
+            await this.lnkRegister.click();
+        }catch(error){
+            console.log(`Exception occured while clicking 'MRegister':${error}`);
+            throw error;
+        }
+    }
+
     //clcik "My Account" link
     async clickLogin(){
         try{
@@ -50,7 +59,7 @@ export class HomePage{
         }
     }
 
-    //clcik "My Account" link
+    //click "My Account" link
     async enterProductName(pName:string){
         try{
             await this.txtSearchbox.fill(pName);

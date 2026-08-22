@@ -78,7 +78,8 @@ export class RegistrationPage {
         await this.clickContinue();
     }
 
-    async verifyAccountCreated(): Promise<void> {
+    async verifyAccountCreated(): Promise<string> {
         await expect(this.msgConfirmation).toBeVisible();
+        return await this.msgConfirmation.innerText();
     }
 }

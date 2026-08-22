@@ -15,7 +15,7 @@ export class RandomDataUtil{
     }
 
     static getEmail(){
-        faker.internet.email();
+        return faker.internet.email()
     }
 
     static getPhoneNumber(){
